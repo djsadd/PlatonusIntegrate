@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  platonus-notifications:
+    build: .
+    container_name: platonus-notifications
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
