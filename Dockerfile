@@ -9,6 +9,6 @@ COPY . .
 
 WORKDIR /app/PlatonusNotification
 
-EXPOSE 8000
+EXPOSE 8015
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8015"]
